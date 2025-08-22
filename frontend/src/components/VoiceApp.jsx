@@ -13,7 +13,7 @@ import "../css/VoiceApp.css"; // Import your CSS styles
 import DoctorReport from "./DoctorReport"; // Import the DoctorReport component
 import SummaryReport from "./SummaryReport"; // Import the SummaryReport component
 
-const WS_URL = "ws://localhost:8000/ws";
+const WS_URL = "wss://ai-patient-simulator.onrender.com/ws";
 const cardsPerSlide = 6;
 
 const VoiceApp = () => {
@@ -39,7 +39,7 @@ const VoiceApp = () => {
    const [isGeneratingSummary, setIsGeneratingSummary] = useState(false);
    const [isSummaryGenerated, setIsSummaryGenerated] = useState(false);
 
-   const baseUrl = "http://127.0.0.1:8000/";
+   const baseUrl = "https://ai-patient-simulator.onrender.com/";
    // const baseUrl = "http://192.168.1.31:8000/";
 
    const {
