@@ -183,10 +183,4 @@ REACT_APP_API_BASE_URL=http://localhost:8000
 
 ---
 
-## 👨‍⚕️ Maintainer
-
-- **Author**: Sunil Chopra  
-- **Email**: sunill@edquest.co.in  
-- **Location**: India
-
      
