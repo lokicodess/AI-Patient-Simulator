@@ -1,0 +1,19 @@
+[project]
+name = "backend"
+version = "0.1.0"
+description = "AI medical assistant backend (text-based, no audio processing)"
+readme = "README.md"
+requires-python = "==3.10.12"
+
+# Minimal dependencies required for current backend functionality
+dependencies = [
+    "fastapi>=0.110.0",                # API framework
+    "uvicorn[standard]>=0.29.0",       # ASGI server
+    "pydantic>=2.6.0",                 # Data validation for request/response models
+    "websockets>=12.0",                # WebSocket support
+    "google-generativeai>=0.5.0",      # Gemini API client
+    "python-dotenv>=1.0.0",            # Environment variables support
+]
+
+[tool.uv]
+# Optional: uv-specific configurations can go here

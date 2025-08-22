@@ -1,0 +1,86 @@
+/* Bubble Alignment */
+.chat-message.left {
+   align-self: flex-start;
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 5px;
+}
+
+.chat-message.right {
+   align-self: flex-end;
+   display: flex;
+   flex-direction: row-reverse;
+   margin-bottom: 5px;
+}
+
+/* Bubble Styles */
+.bubble {
+   display: inline-block;
+   padding: 10px 14px;
+   border-radius: 18px;
+   position: relative;
+   font-size: 15px;
+   line-height: 1.4;
+   word-wrap: break-word;
+   max-width: 100%;
+   white-space: pre-wrap;
+}
+
+/* ✅ Patient = sender = Left */
+.patient-bubble {
+   background-color: #ffffff;
+   color: #000;
+   border: 1px solid #ccc;
+}
+
+/* ✅ Doctor = receiver = Right */
+.doctor-bubble {
+   background-color: #dcf8c6;
+   color: #000;
+}
+*/
+
+/* Tail for Patient bubble (left) */
+.patient-bubble::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: -10px;
+   width: 0;
+   height: 0;
+   border-top: 10px solid #ffffff;
+   border-left: 10px solid transparent;
+}
+
+/* Tail for Doctor bubble (right) */
+.doctor-bubble::after {
+   content: "";
+   position: absolute;
+   top: 0;
+   /* left: 1.5px; */
+   width: 0;
+   height: 0;
+   border-top: 10px solid #dcf8c6;
+   border-right: 10px solid transparent;
+}
+/***
+.chat-container {
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+   padding: 5px 15px;
+}
+
+***/
+.right-content-container {
+   height: 100%; /* Ensure it can grow */
+   max-height: 61vh; /* Adjust height based on your layout */
+   overflow-y: auto; /* Enables vertical scroll if needed */
+   padding: 10px;
+   border: 1px solid #ddd; /* Optional visual separation */
+   border-top: none;
+}
+
+/* Ensure .chatbot uses all available space */
+.chatbot {
+   height: 100%;
+   padding: 0 5px;
+}

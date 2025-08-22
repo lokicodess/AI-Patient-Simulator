@@ -1,0 +1,80 @@
+.mic-status{margin-bottom: 9px;}
+.carousel-caption {
+    position: absolute;
+    right: 15%;
+    bottom: 1.25rem;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #282c34 !important;
+    text-align: center;
+}
+.card-title{
+    font-size: 14px !important;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #a19f9f;
+}
+.card {
+    height: 220px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    transition: transform 0.2s;
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-body-custom {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .card-title-truncate {
+    font-size: 1rem;
+    font-weight: 600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: box-shadow 0.2s;
+  }
+  .card:hover, .card:focus, .card:active {
+    color: #007bff !important; /* Change color on hover */
+  }
+
+  .selected-card {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    border-radius: 5px;
+  }
+
+  .carousel-fixed-height {
+    min-height: 250px;
+    max-height: 300px;
+    overflow: hidden;
+    background-color: #f8f9fa; /* Optional: Light background */
+    border-radius: 10px;
+    padding: 10px;
+  }
+  
+  .card-title-truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .active-card {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    transition: all 0.3s ease-in-out;
+    background-color: #e9f5ff !important;
+  }
