@@ -3,7 +3,7 @@
 } */
 .App {
    min-height: 100vh;
-   background-image: url("../public/images/bacjground.jpg");
+   background-image: url("../public/images/background.jpg");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
